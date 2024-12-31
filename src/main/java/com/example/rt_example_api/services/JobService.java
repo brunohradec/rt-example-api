@@ -1,6 +1,7 @@
 package com.example.rt_example_api.services;
 
 import com.example.rt_example_api.model.Job;
+import com.example.rt_example_api.model.enums.JobType;
 import com.example.rt_example_api.repos.JobRepo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -14,7 +15,7 @@ public class JobService {
         this.jobRepo = jobRepo;
     }
 
-    public Page<Job> findAllJobs(Pageable pageable) {
-        return jobRepo.findAllJobs(pageable);
+    public Page<Job> findJobsByType(JobType type, Pageable pageable) {
+        return jobRepo.findJobsByType(type, pageable);
     }
 }

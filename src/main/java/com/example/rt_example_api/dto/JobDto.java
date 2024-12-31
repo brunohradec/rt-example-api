@@ -1,5 +1,6 @@
 package com.example.rt_example_api.dto;
 
+import com.example.rt_example_api.model.enums.JobType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,4 +13,5 @@ import lombok.NoArgsConstructor;
 public class JobDto {
     private String name;
     private String description;
+    private JobType type;
 }

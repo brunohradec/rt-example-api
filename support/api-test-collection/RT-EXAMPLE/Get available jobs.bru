@@ -1,0 +1,17 @@
+meta {
+  name: Get available jobs
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8080/api/jobs?type=AVAILABLE&page=0&size=5
+  body: none
+  auth: none
+}
+
+params:query {
+  type: AVAILABLE
+  page: 0
+  size: 5
+}

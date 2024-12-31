@@ -18,4 +18,4 @@ Start the Spring application form the IDE or using:
 
 This example exposes 2 endpoints that a `GET` request can be sent to:
 - http://localhost:8080/api/employees?page=0&size=5
-- http://localhost:8080/api/jobs?page=0&size=5
+- http://localhost:8080/api/jobs?type={type}&page=0&size=5

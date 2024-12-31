@@ -1,5 +1,6 @@
 package com.example.rt_example_api.model;
 
+import com.example.rt_example_api.model.enums.JobType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,4 +21,7 @@ public class Job {
     private String name;
 
     private String description;
+
+    @Enumerated(EnumType.STRING)
+    private JobType type;
 }
