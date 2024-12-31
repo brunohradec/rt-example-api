@@ -23,5 +23,6 @@ public class Job {
     private String description;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private JobType type;
 }
