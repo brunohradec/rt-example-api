@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres
+    container_name: rt_example_postgres_db
+    restart: always
+    shm_size: 128mb
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: rt_example_db
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_pass

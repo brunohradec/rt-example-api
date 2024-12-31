@@ -1,0 +1,16 @@
+meta {
+  name: Get employees
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/api/employees?page=0&size=5
+  body: none
+  auth: none
+}
+
+params:query {
+  page: 0
+  size: 5
+}
